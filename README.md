@@ -1,37 +1,44 @@
-# Mouad Garroud Portfolio
+# Portfolio de Mouad Garroud
 
-A modern personal portfolio built with Svelte and Vite, designed to present professional experience, projects, technical skills, education, certifications, and contact information in a clean single-page experience.
+Portfolio personnel moderne construit avec Svelte et Vite pour présenter les projets, les compétences, l’expérience professionnelle, la formation, les certifications et les moyens de contact de Mouad Garroud.
 
-## Overview
+## Aperçu
 
-This project is a responsive portfolio website for Mouad Garroud, showcasing:
+Ce projet est une application web en une seule page, responsive et élégante, qui met en avant :
 
-- Personal introduction and profile
-- Project showcase with GitHub links
-- Technical stack overview
-- Experience and education sections
-- Certifications
-- Contact details
-- Light/dark theme toggle
-- Scroll-based reveal animations
+- une introduction personnelle avec photo
+- un aperçu des projets et liens GitHub
+- un résumé des compétences techniques
+- l’expérience professionnelle et la formation
+- les certifications
+- une section de contact
+- un mode clair/sombre
+- des animations d’apparition au scroll
 
-## Tech Stack
+## Stack technique
 
 - Svelte 5
 - Vite
 - JavaScript
-- CSS3
 - HTML5
+- CSS3
+- SASS-like styling via CSS modules/global styles
 
-## Project Structure
+## Structure du projet
 
 ```text
 Portfolio/
 ├── index.html
+├── jsconfig.json
+├── LICENSE
 ├── package.json
 ├── README.md
 ├── svelte.config.js
 ├── vite.config.js
+├── public/
+│   ├── googlee1615bfda852029d.html
+│   ├── robots.txt
+│   └── sitemap.xml
 ├── src/
 │   ├── App.svelte
 │   ├── app.css
@@ -51,17 +58,18 @@ Portfolio/
 │       └── Skill.svelte
 ```
 
-## Features
+## Fonctionnalités
 
-- Responsive portfolio layout
-- Animated hero section with profile image
-- Interactive project cards
-- Theme toggle button with dark/light mode support
-- Smooth section reveal on scroll
-- GitHub project links and portfolio navigation
-- Built as a lightweight static Svelte app
+- mise en page responsive pour mobile, tablette et desktop
+- bannière/hero animée with profile image
+- cartes de projets dynamiques
+- bouton de bascule du thème clair/sombre
+- animations de révélation par IntersectionObserver
+- navigation rapide entre sections
+- liens GitHub vers les projets publics
+- chargement léger et performant
 
-## Sections Included
+## Sections incluses
 
 - Header / Hero
 - About
@@ -73,10 +81,14 @@ Portfolio/
 - Contact
 - Footer
 
+
 ## Notes
 
-The project is intentionally lightweight and optimized for fast loading while maintaining a modern portfolio presentation.
+Le site est conçu pour être léger, visuellement moderne et facile à maintenir. Le code est structuré par composants Svelte pour une meilleure organisation et extensibilité.
 
-## License
 
-This project is for personal portfolio use and is not published as a public package or open-source framework project unless otherwise specified by the author.
+## Contact
+
+- Email : mouadgarroud@gmail.com
+- GitHub : https://github.com/MouadGarroud
+- Portfolio : site local / production de l’auteur
