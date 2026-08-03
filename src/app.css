@@ -1,0 +1,122 @@
+/* src/app.css */
+
+/* 1. GLOBAL SETTINGS & VARIABLES */
+:root {
+  --primary: #1d4ed8;
+  --primary-hover: #1e40af;
+  --bg-dark: #0f172a;
+  --card-bg: rgba(30, 41, 59, 0.7);
+  --text-main: #ffffff;
+  --text-dim: #cbd5e1;
+  --transition: 0.3s ease;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Inter, "Helvetica Neue", Arial, sans-serif;
+}
+
+body {
+  background: var(--bg-dark);
+  color: var(--text-main);
+  transition: background 0.5s, color 0.5s;
+  line-height: 1.6;
+  text-rendering: optimizeLegibility;
+}
+
+/* 2. LIGHT MODE OVERRIDES */
+body.light {
+  --primary: #1d4ed8;
+  --primary-hover: #1e40af;
+  --bg-dark: #f1f5f9;
+  --card-bg: rgba(255, 255, 255, 0.8);
+  --text-main: #0f172a;
+  --text-dim: #334155;
+}
+
+.section {
+  margin-bottom: 80px;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: 0.8s ease-out;
+}
+
+.section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.section-title {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  position: relative;
+  display: inline-block;
+  color: var(--text-main);
+}
+
+.section-title::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+  width: 40px;
+  height: 4px;
+  background: var(--primary);
+  border-radius: 10px;
+  transition: width var(--transition);
+}
+
+.section:hover .section-title::after {
+  width: 80px;
+}
+
+.card {
+  background: var(--card-bg);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.card p {
+  color: var(--text-dim);
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 28px;
+  background: var(--primary);
+  color: #f8fafc;
+  text-decoration: none;
+  border-radius: 12px;
+  font-weight: 700;
+  margin-top: 20px;
+  transition: var(--transition);
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+  background: var(--primary-hover);
+}
+
+.skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.skill-tag {
+  background: rgba(29, 78, 216, 0.12);
+  border: 1px solid rgba(29, 78, 216, 0.35);
+  padding: 8px 18px;
+  border-radius: 10px;
+  font-size: 0.9rem;
+  color: var(--primary);
+  font-weight: 700;
+}

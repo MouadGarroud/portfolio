@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Mouad Garroud | Développeur Web</title>
+  <meta name="description" content="Portfolio de Mouad Garroud, développeur web créant des expériences modernes, performantes et accessibles." />
+  <meta name="author" content="Mouad Garroud" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#0f172a" />
+  <meta name="robots" content="index, follow" />
+
+  <!-- Favicons -->
+  <link rel="icon" type="image/png" href="/favicon.png" />
+  <link rel="apple-touch-icon" href="/favicon.png" />
+
+  <!-- Open Graph Meta Tags for Social Previews -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://mouadgarroud.vercel.app/" />
+  <meta property="og:title" content="Mouad Garroud | Développeur Web" />
+  <meta property="og:description" content="Portfolio de Mouad Garroud, développeur web créant des expériences modernes, performantes et accessibles." />
+  <meta property="article:published_time" content="2026-08-03T00:00:00+00:00" />
+  
+  <!-- Image Settings (Prevents Blur & Force High-Res) -->
+  <meta property="og:image" content="https://mouadgarroud.vercel.app/og-image.png" />
+  <meta property="og:image:secure_url" content="https://mouadgarroud.vercel.app/og-image.png" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Mouad Garroud - Développeur Web" />
+
+  <!-- Schema Markup -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Mouad Garroud",
+      "jobTitle": "Développeur Web",
+      "url": "https://mouadgarroud.vercel.app/",
+      "sameAs": [
+        "https://github.com/MouadGarroud",
+        "https://www.linkedin.com/in/mouadgarroud"
+      ]
+    }
+  </script>
+
+  <!-- Dark/Light Theme Script -->
+  <script>
+    (function () {
+      const savedTheme = localStorage.getItem('theme');
+      const prefersLight = window.matchMedia('(prefers-color-scheme: light)').matches;
+
+      if (savedTheme === 'light' || (!savedTheme && prefersLight)) {
+        document.documentElement.classList.add('light');
+      }
+    })();
+  </script>
+
+  <link rel="stylesheet" href="/src/app.css">
+</head>
+
+<body>
+  <div id="app"></div>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+
+</html>

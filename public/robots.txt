@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://mouadgarroud.vercel.app/sitemap.xml
